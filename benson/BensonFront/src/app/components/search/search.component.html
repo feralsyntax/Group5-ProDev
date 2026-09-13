@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-mt-6">
+                <label for="exampleDataList" class="form-label">Datalist example</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." (change)="titleValue($any($event.target).value)">
+                <datalist id="datalistOptions">
+                    <option value="San Francisco" *ngFor="let post of posts" [value]="post.title">                                  
+                </datalist>
+            </form>
+            <div>
+                <input type="text" name="search" [(ngModel)]="searchText">
+            </div>
+            <div>
+                results
+                <!-- <div class="col-sm-4" *ngFor="let post of posts | ">
+                    {{post.title}}
+                    {{post.category}}
+                </div> -->
+            </div>
+    
+        </div>
+    </div>
+    <div class="row mt-5" *ngIf="!postTitle">
+        <div class="col-sm-4" *ngFor="let post of posts | filter:searchText">
+            <div class="card">
+                <div class="title" name="title">{{post.title}}</div>
+                <div name="category">{{post.category}}</div>
+                <div name="description">{{post.description}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5" *ngIf="postTitle">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="title" name="title">{{postTitle}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>

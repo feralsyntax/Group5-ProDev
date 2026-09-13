@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(234, 246, 251);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+#spec{
+    margin-top: 10rem;
+}
+
+
+.checked {
+    color: orange;
+  }
+
+  .checked:hover{
+      color: darkblue;
+  }
+ 
+
+  .btn{
+      margin-right: 1rem;
+  }
+
+
+  

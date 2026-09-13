@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+            <li class="breadcrumb-item"><a href="addBook">Add A New Book</a></li>
+        </ol>
+    </nav>
+    <div class="row">
+    <div class="col-md-4 mr-4" *ngFor="let user of users">
+      <ng-container >
+          <div class="card" style="width: 14rem;margin-right: 1rem;">
+            <img src="{{ user.image }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ user.title }}</h5>
+              <p class="card-text">{{ user.author }}</p>
+              <small>{{ user.description }}</small>
+              <div class="card-footer bg-transparent border-success">
+                  <button [routerLink]="['users/:id/{{user.id}}']" type="button" class="btn btn-primary btn-sm">view</button>
+              </div>
+              
+            </div>
+          </div>            
+      </ng-container>
+    </div>
+    </div>
+  </div>

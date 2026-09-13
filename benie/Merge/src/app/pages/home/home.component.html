@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <title>Hekaya- Home</title>
+</head>
+<body style="height: 100vh;">
+
+<div class="container">
+
+    <div class="row height d-flex justify-content-center align-items-center">
+
+      <div class="col-md-8">
+
+        <div class="search">
+          <form class="form-mt-6">
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." (change)="titleValue($any($event.target).value)" name="search" [(ngModel)]="searchText">
+            <datalist id="datalistOptions">
+                <option value="fiction" *ngFor="let post of posts" [value]="post.title">                                  
+            </datalist>
+        </form>
+        </div>
+    
+        
+      </div>
+      
+    </div>
+</div>
+
+<!-- codepen 4 cards start -->
+
+<div class="container mx-auto mt-4">
+  <div *ngIf="!postTitle">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of productList | filter:searchText">
+        <div class="card" style="width: 18rem;margin-top:5%;">
+    <!-- <img src="{{item.image}}" class="card-img-top" alt="..."> -->
+    <img class="img1" src="https://res.cloudinary.com/benie/image/upload/v1657863372/stocizmus-5241946_1920_kiwmrk.jpg" height="200" alt="">
+    
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{item.author}}</h6>
+      <p class="card-text">{{item.description}}</p>
+      <p class="card-text"><strong>Price:</strong> Ksh {{item.price}}</p>
+      <button class="btn btn-primary" (click)=addtocart(item) style="margin-right:2.5%;">Add to cart</button>
+      <button type="button" class="cart btn btn-sm btn-outline-success" (click)='goToCartUrl(item.id)'>View cart</button><br>
+      <a type="button" class="btn mr-2" (click)='goToUrl(item.id)' style="margin-top:2.5%;"><i class="fas fa-link"></i> View details</a>
+    </div>
+    </div>
+      </div>    
+  </div>
+  </div>
+  
+<div *ngIf="postTitle">
+  <div class="row" *ngFor="let item of productList | filter:searchText">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+  <!-- <img src="{{item.image}}" class="card-img-top" alt="..."> -->
+  <img class="img1" src="https://res.cloudinary.com/benie/image/upload/v1657863372/stocizmus-5241946_1920_kiwmrk.jpg" height="200" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{item.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{item.author}}</h6>
+    <p class="card-text">{{item.description}}</p>
+    <p class="card-text"><strong>Price:</strong> Ksh {{item.price}}</p>
+    <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+    <a class="cart" (click)='goToCartUrl(item.id)'>View cart</a>
+    <a type="button" class="btn mr-2" (click)='goToUrl(item.id)'><i class="fas fa-link"></i> View details</a>
+  </div>
+  </div>
+    </div>    
+</div>
+</div>
+  </div>
+<!-- codepen 4 cards start -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<div class="container" *ngIf="profile !== undefined ">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item ml-auto"><a href="users"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
+        </ol>
+	</nav>
+    <h1 class="title-pen"> User <span>Profile</span></h1>
+    <div class="user-profile">
+        <img class="avatar" src="https://rsb.org/wp-content/uploads/2020/06/water-F.jpg" alt="Ash" />
+        <div class="username">{{ profile.name }}</div>
+    <div class="bio">
+        Senior UI Designer
+    </div>
+        <div class="description">This is my lovely bio
+        {{ profile.bio }}
+        <br>
+        <div><em><b>{{ profile.email }}</b></em></div>
+    </div>
+    <br><br>
+    <ul class="data">
+        <li>
+        <span class="entypo-book"> 2</span>
+        </li>
+        <li>
+        <span class="entypo-star"> 3</span>
+        </li>
+        <li>
+        <span class="entypo-user"> 11</span>
+        </li>
+    </ul>
+    </div>
+</div>

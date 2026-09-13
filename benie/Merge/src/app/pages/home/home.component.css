@@ -1,0 +1,478 @@
+body{
+  background-color:#f5f5f5;
+  
+}
+
+.landing{
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin-top: 3rem; */
+  margin-bottom: 12rem;
+  background-image: url(  'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1600' );
+
+
+height: 90vh;
+
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.description{
+margin-top: 10rem;
+color: white;
+
+}
+
+/*  */
+header {
+  display: flex;
+  justify-content: space-between;
+  /* background: #ffffff; */
+  padding: 0.1em;
+}
+
+
+/* a {
+  text-decoration: none;
+  color: black;
+} */
+
+
+li {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 1.2em;
+  font-family: monospace, sans-serif;
+}
+.home{
+  
+      margin-top: 0.8em;
+      margin-left: 1.1em;
+      font-family: 'Lobster', cursive;
+      font-size: rem;
+
+}
+/*  */
+
+.navbar-brand{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img1{
+  margin-right: 2rem;
+}
+
+h1{
+  /* word-spacing: 0.2em; */
+  /* line-height: 1.2em; */
+  margin-left: 1em;
+  
+  font-size: 4rem;
+}
+
+.mini{
+font-size: 15px;
+line-height: 0.2em;
+}
+
+.best-seller{
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.best-books{
+  display: flex;
+  justify-content: space-evenly 
+}
+
+.services{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content:space-evenly;
+
+}
+
+.span2{
+  font-size: 15px;
+}
+
+.foot{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#signup{
+  margin-left: 1rem;
+}
+
+.about{
+  text-align: center;
+  margin-top: 4rem;
+  background-color: rgb(218, 223, 223);
+  line-height: 2em;
+  border-radius: 0.8em;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 4rem;
+  color: #494848;
+
+}
+
+
+/* .sixth-box {
+  display: flex;
+  justify-content: sp;
+  margin-top: 2rem;
+}
+
+
+
+.port-3,
+.port-4,
+.port-5 {
+  border: black solid 0.1rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 4rem 8rem;
+  background: #ffdde1;
+}
+
+
+.port-3 {
+  background-image: url("https://images.pexels.com/photos/922100/pexels-photo-922100.png?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.port-4 {
+  background-image: url("https://images.pexels.com/photos/922100/pexels-photo-922100.png?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.port-5 {
+  background-image: url("https://images.pexels.com/photos/922100/pexels-photo-922100.png?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 8rem;
+} */
+
+.ftco-section{
+  background-color: lightcyan;
+}
+
+
+/* codepen start */
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); */
+
+html {
+font-family: 'Montserrat', Arial, sans-serif;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+body {
+background: #F2F3EB;
+}
+
+button {
+overflow: visible;
+}
+
+button, select {
+text-transform: none;
+}
+
+button, input, select, textarea {
+/* color: #5A5A5A; */
+/* font: inherit; */
+margin: 0;
+}
+
+input {
+line-height: normal;
+}
+
+textarea {
+overflow: auto;
+}
+
+#container {
+border: solid 3px #474544;
+max-width: 768px;
+margin: 60px auto;
+position: relative;
+}
+
+form {
+padding: 37.5px;
+margin: 50px 0;
+}
+
+h1 {
+color: #474544;
+/* font-size: 32px; */
+/* font-weight: 700;
+letter-spacing: 7px; */
+text-align: center;
+text-transform: uppercase;
+}
+
+.us{
+  background-color: rgb(248, 255, 231);
+  margin-top: 10rem;
+}
+
+.underline {
+border-bottom: solid 2px #474544;
+margin: -0.512em auto;
+width: 80px;
+}
+
+.icon_wrapper {
+margin: 50px auto 0;
+width: 100%;
+}
+
+.icon {
+display: block;
+fill: #474544;
+height: 50px;
+margin: 0 auto;
+width: 50px;
+}
+
+.email {
+float: right;
+width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+background: none;
+border: none;
+border-bottom: solid 2px #474544;
+color: #474544;
+font-size: 1.000em;
+font-weight: 400;
+letter-spacing: 1px;
+margin: 0em 0 1.875em 0;
+padding: 0 0 0.875em 0;
+text-transform: uppercase;
+width: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+outline: none;
+padding: 0 0 0.875em 0;
+}
+
+.message {
+float: none;
+}
+
+.name {
+float: left;
+width: 45%;
+}
+
+select {
+background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+outline: none;
+-moz-appearance: none;
+-webkit-appearance: none;
+}
+
+select::-ms-expand {
+display: none;
+}
+
+.subject {
+width: 100%;
+}
+
+.telephone {
+width: 100%;
+}
+
+textarea {
+line-height: 150%;
+height: 150px;
+resize: none;
+width: 100%;
+}
+
+::-webkit-input-placeholder {
+color: #474544;
+}
+
+:-moz-placeholder { 
+color: #474544;
+opacity: 1;
+}
+
+::-moz-placeholder {
+color: #474544;
+opacity: 1;
+}
+
+:-ms-input-placeholder {
+color: #474544;
+}
+
+#form_button {
+background: none;
+border: solid 2px #474544;
+color: #474544;
+cursor: pointer;
+display: inline-block;
+font-family: 'Helvetica', Arial, sans-serif;
+font-size: 0.875em;
+font-weight: bold;
+outline: none;
+padding: 20px 35px;
+text-transform: uppercase;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+#form_button:hover {
+background: #474544;
+color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+#container {
+  margin: 20px auto;
+  width: 95%;
+}
+}
+
+@media screen and (max-width: 480px) {
+h1 {
+  font-size: 26px;
+}
+
+.underline {
+  width: 68px;
+}
+
+#form_button {
+  padding: 15px 25px;
+}
+}
+
+@media screen and (max-width: 420px) {
+h1 {
+  font-size: 18px;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
+
+.underline {
+  width: 53px;
+}
+
+input[type='text'], [type='email'], select, textarea {
+  font-size: 0.875em;
+}
+}
+/* codepen contact form end */
+
+
+.contact{
+text-align: center;
+}
+
+.copy{
+  text-align: center;
+}
+
+
+
+
+.bg-footer {
+  background-color: #33383C;
+  padding: 50px 0 30px;
+}
+.footer-heading {
+  letter-spacing: 2px;
+}
+.footer-link a {
+  color: #ACACAC;
+  line-height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.footer-link a:hover {
+  color: #1BBC9B;
+}
+.contact-info {
+  color: #ACACAC;
+  font-size: 14px;
+}
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+}
+.facebook {
+  background-color: #4E71A8;
+  color: #FFFFFF;
+}
+.twitter {
+  background-color: #55ACEE;
+  color: #FFFFFF;
+}
+.google {
+  background-color: #D6492F;
+  color: #FFFFFF;
+}
+.apple {
+  background-color: #424041;
+  color: #FFFFFF;
+}
+.footer-alt {
+  color: #ACACAC;
+}
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-heading:after {
+  content: "";
+  width: 25px;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #1BBC9B;
+}

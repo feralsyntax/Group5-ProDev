@@ -1,0 +1,29 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="users">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Add A New Book</li>
+    </ol>
+  </nav>
+  <br>
+     <div class="row mb-4">
+          <div class="col-md">
+  
+              <form #usersForm="ngForm" (ngSubmit)="submitBookForm(usersForm.value)">
+                  <div class="form-group">
+                      <input type="text" ngModel name="title" class="form-control" placeholder="Enter Name">
+                      <br><br>
+                      <input type="text" ngModel name="author" class="form-control" placeholder="Enter Author">
+                      <br><br>
+                      <input type="text" ngModel name="description" class="form-control" placeholder="Enter Description">
+                      <br><br>
+                      <input type="text" ngModel name="publisher" class="form-control" placeholder="Enter Publisher">
+                      <br><br>
+                  </div>
+                  <div class="form-group">
+                      <br>
+                      <button type="submit" class="btn btn-primary">Add New Book</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  

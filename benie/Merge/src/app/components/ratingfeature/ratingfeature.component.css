@@ -1,0 +1,18 @@
+.rating-order-wrp 
+    d-flex {
+        display: flex;
+    }
+    .align-items-center {
+        align-items: center;
+    }
+    .w-50 {
+        width: 50%;
+    }
+    .rating-list {
+        border-top: 1px solid #ddd;
+        padding: 15px 0;
+    }
+
+
+
+/**Rating**/

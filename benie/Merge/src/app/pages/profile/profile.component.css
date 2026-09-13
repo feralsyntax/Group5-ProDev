@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+#main{
+    height: 100vh;
+}
+
+#profile{
+    margin-top: 10rem;
+    color: white;
+}
+
+.card{
+    background-color: #8e9802;
+}

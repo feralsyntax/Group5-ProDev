@@ -1,0 +1,32 @@
+  
+  <h4 class="breadcrumb-item active" style="text-align:center;margin-bottom:1.5%;margin-top:1.5%;" aria-current="page">Add A New Book</h4>
+  <div class="container">
+    <div class="row mb-4">
+        <div class="col-md">
+
+            <form #bookForm="ngForm" (ngSubmit)="postBook(bookForm.value)">
+                <div class="form-group">
+                    <input type="text" ngModel name="title" class="form-control" placeholder="Book Title" required>
+                    <br><br>
+                    <input type="text" ngModel name="author" class="form-control" placeholder="Enter Author" required>
+                    <br><br>
+                    <input type="text" ngModel name="description" class="form-control" placeholder="Enter Description">
+                    <br><br>
+                    <input type="text" ngModel name="publisher" class="form-control" placeholder="Enter Publisher">
+                    <br><br>
+                    <input type="text" ngModel name="price" class="form-control" placeholder="Enter Price">
+                    <br><br>
+                    <input type="text" ngModel name="category" class="form-control" placeholder="Enter Category">
+                    <br><br>
+                    <input type="file" ngModel name="image" class="form-control" placeholder="Upload Image">
+                </div>
+                <div class="form-group">
+                    <br>
+                    <button type="submit" class="btn btn-primary">Add New Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+     
+  

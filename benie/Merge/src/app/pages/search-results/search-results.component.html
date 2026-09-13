@@ -1,0 +1,16 @@
+<div class="row mt-5" *ngIf="!postTitle">
+    <div class="col-sm-4" *ngFor="let post of posts | filter:searchText">
+        <div class="card">
+            <div class="title" name="title">{{post.title}}</div>
+            <div name="category">{{post.category}}</div>
+            <div name="description">{{post.description}}</div>
+        </div>
+    </div>
+</div>
+<div class="row mt-5" *ngIf="postTitle">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="title" name="title">{{postTitle}}</div>
+        </div>
+    </div>
+</div>

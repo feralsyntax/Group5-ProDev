@@ -1,0 +1,10 @@
+<div class="comments-container">
+    <app-comment
+      *ngFor="let comment of comments"
+      [comment]="comment"
+    ></app-comment>
+    <app-comments-box
+      *ngIf="currentUser"
+      [currentUser]="currentUser"
+    ></app-comments-box>
+  </div>

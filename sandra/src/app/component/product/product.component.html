@@ -1,0 +1,43 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F618RWG3cL3L.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.com%2FHarambees-Kenyan-Sundowner-Gerald-Everett%2Fdp%2F1735950211&tbnid=K4w6Sr_YIxqMBM&vet=12ahUKEwiU3ZvVvtT4AhWPxYUKHUlMCFQQMygWegUIARDRAQ..i&docid=JqVAHl6XVsRv6M&w=1000&h=1500&q=kenyan%20fiction%20book%20covers&hl=en&ved=2ahUKEwiU3ZvVvtT4AhWPxYUKHUlMCFQQMygWegUIARDRAQ" alt="">
+                <h6>All Books</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Fiction')">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.theculturetrip.com%2F450x%2Fsmart%2Fwp-content%2Fuploads%2F2017%2F01%2Fmy-maasai-life-by-robin-wiszowaty.jpg&imgrefurl=https%3A%2F%2Ftheculturetrip.com%2Fafrica%2Fkenya%2Farticles%2F10-recommended-books-featuring-kenya%2F&tbnid=0P3YBBvtT1VdQM&vet=12ahUKEwi7yIS2vdT4AhVH4BoKHcXmDKwQMygHegUIARCyAQ..i&docid=90w7MkAKJMipvM&w=450&h=655&q=kenyan%20fiction%20book%20covers&ved=2ahUKEwi7yIS2vdT4AhVH4BoKHcXmDKwQMygHegUIARCyAQ" alt="">
+                <h6> Fiction </h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('forklore')">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0307%2F5791%2F2715%2Fproducts%2FFACINGMOUNTKENYAORIGINAL_580x.jpg%3Fv%3D1599925181&imgrefurl=https%3A%2F%2Fwww.mathaga.com%2F&tbnid=gT04VEjiPZHNGM&vet=12ahUKEwjbu7n5vdT4AhUmxoUKHYtwBhIQMygPegUIARDDAQ..i&docid=o6SGmctJH1jwLM&w=521&h=739&q=kenyan%20folklore%20book%20covers&hl=en&ved=2ahUKEwjbu7n5vdT4AhUmxoUKHYtwBhIQMygPegUIARDDAQ" alt="">
+                <h6> Forklore </h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Poetry')">
+                <img style="width: 62px; margin-top: 5px;" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fdarajapress.com%2Fwp-content%2Fuploads%2F2020%2F03%2Fmau-mau_cover-1-1-scaled.jpg&imgrefurl=https%3A%2F%2Fdarajapress.com%2Fpublication%2Fmau-mau-from-within-land-freedom-army&tbnid=xFGCdKgRjvFhxM&vet=12ahUKEwit1b6cvtT4AhV1gc4BHVGvCdYQMyggegUIARD0AQ..i&docid=0K4X5iV32RM6LM&w=1707&h=2560&q=kenyan%20poetry%20book%20covers&hl=en&ved=2ahUKEwit1b6cvtT4AhV1gc4BHVGvCdYQMyggegUIARD0AQ" alt="">
+                <h6>Poetry </h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList | filter:searchKey:'all books'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.author}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> Ksh{{item.price}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

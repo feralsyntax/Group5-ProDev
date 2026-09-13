@@ -1,0 +1,70 @@
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a routerLink="/" class="navbar-brand">Home</a>
+  
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="!authenticated">
+          <li class="nav-item">
+            <a routerLink="/login" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/register" class="nav-link">Register</a>
+          </li>
+        </ul>
+  
+        <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="authenticated">
+          <li class="nav-item">
+            <a routerLink="/login" class="nav-link" (click)="logout()">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white p-3">
+    <a class="navbar-brand text-white" href="/">Hekaya</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto text-white">
+            
+
+            
+          <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="authenticated">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="/home">Home </a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link text-white" href="/">About</a>
+          </li>
+          <ul class="navbar-nav" style="margin-right:5%;">
+            <li class="nav-item">
+              <a routerLink="/addBook" class="nav-link" class="btn btn-sm btn-success" id="">AddBook</a>
+            </li>
+          </ul>
+            <li class="nav-item">
+              <a routerLink="/login" class="nav-link" (click)="logout()" class="btn btn-primary" id="signup">Logout</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="authenticated">
+            <li class="nav-item" style="margin-right:1.5%;">
+              <a routerLink="/addBook" class="nav-link" class="btn btn-success" id="">Add Book</a>
+            </li>
+          </ul>
+          
+          <div>
+            <ul class="navbar-nav" *ngIf="!authenticated">
+              <li class="nav-item">
+                <a routerLink="/login" class="nav-link" class="btn btn-sm btn-outline-primary" id="signup">Login</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/register" class="nav-link" class="btn btn-sm btn-primary" id="signup">Register</a>
+              </li>
+            </ul>
+          </div>
+
+        </ul>
+    </div>
+</nav>
